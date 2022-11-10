@@ -17,16 +17,17 @@ main {
 }
 
 .background-box {
-  width: 960px;
+  width: 100%;
   height: 100%;
   padding: 50px 30px;
-  margin: 0 auto;
+  margin: 0 15px;
+  position: relative;
 
 
 }
 
 .background {
-  width: 900px;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin: 30px;
@@ -46,9 +47,9 @@ main {
   position: absolute;
   top: 0px;
   left: 0px;
-  
+
 }
-  
+
 .step2 {
   font-size: 13px;
   color: white;
@@ -59,7 +60,7 @@ main {
   background-color: #ff9a4b;
   position: absolute;
   top: 0px;
-  left: 310px;
+  left: 0px
 }
 
 .step3 {
@@ -72,8 +73,8 @@ main {
   background-color: #ff9a4b;
   position: absolute;
   top: 0px;
-  left: 620px;
-  
+  left: 0px
+
 }
 
 
@@ -89,9 +90,7 @@ main {
 
 }
 
-.background-box:nth-child(even) {
-  margin: 0 30px;
-}
+
 
 .image1 {
   background-image: url(img/flow01.png);
@@ -133,3 +132,52 @@ footer {
   height: 50px;
   background-color: #aaaaaa;
 }
+
+@media screen and (max-width: 768px) {
+ header {
+   width: 100%;
+   margin: 0 auto;
+ }
+
+main {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+  .background {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+    .background-box {
+      width: 90%;
+     margin-bottom: 30px;
+     margin-left: 0px;
+     margin-right: 0px;
+     padding: 5px ;
+}
+
+  .background-box:nth-child(even) {
+
+  }
+
+  .h1 {
+    width: 100%;
+  }
+
+  .p1 {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+
+
