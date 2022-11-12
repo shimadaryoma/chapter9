@@ -27,10 +27,10 @@ main {
 }
 
 .background {
-  width: 100%;
+  width: 960px;
   display: flex;
   justify-content: center;
-  margin: 30px;
+  margin: 50px;
   position: relative;
 
 
@@ -119,13 +119,10 @@ main {
  height: 5px;
  margin-top: 15px;
  margin-bottom: 5px;
- margin-left: 10px;
 }
-
 .p1 {
   height: 50px;
   font-size: 10.5px;
-  margin-left: 10px;
 }
 
 footer {
